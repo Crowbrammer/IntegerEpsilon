@@ -1,6 +1,4 @@
-In my code, there's a test to see that an end datetime is X hours from now. I think depending on how close to the end of a second (is it 05:59:00:001 PM or 05:59:00:999 PM?), it can be exactly the duration apart I set, or it can be 1000 (milliseconds) above 1000 * 60 * 60 * 5. I searched for an epsilon package that handled integers, but they all dealt with floating points. 
-
-My ears deafened and vision blurred with disappointment (not really), so I created this package.
+See if two integers (possibly large, like POSIX timestamps) are within the ballpark of each other. I'm using this to account for millisecond variations between start and an end datetimes. I.e. I want two POSIX timestamps to be within X minutes/hours of each other, and minor fluctuations shouldn't matter/fail a test.
 
 ```js
 const expect = require("chai").expect;
