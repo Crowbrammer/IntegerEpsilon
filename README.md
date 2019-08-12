@@ -1,3 +1,5 @@
+# IntegerEpsilon
+
 See if two integers (possibly large, like POSIX timestamps) are within the ballpark of each other. I'm using this to account for millisecond variations between start and an end datetimes. I.e. I want two POSIX timestamps to be within X minutes/hours of each other, and minor fluctuations shouldn't matter/fail a test.
 
 ```js
