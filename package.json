@@ -1,0 +1,33 @@
+{
+  "name": "integerepsilon",
+  "version": "1.0.0",
+  "description": "See if two integers (possibly large, like POSIX timestamps) are within the ballpark of each other. I'm using this to account for millisecond variations between start and an end datetimes. I.e. I want two datetimes to be within X minutes/hours of each other, and minor fluctuations shouldn't matter/fail a test..",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crowbrammer/IntegerEpsilon.git"
+  },
+  "keywords": [
+    "Epsilon",
+    "Difference",
+    "between",
+    "two",
+    "numbers"
+  ],
+  "author": "Aaron Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crowbrammer/IntegerEpsilon/issues"
+  },
+  "homepage": "https://github.com/Crowbrammer/IntegerEpsilon#readme",
+  "dependencies": {
+    "@types/node": "^12.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
